@@ -12,8 +12,15 @@ int main(void)
 
 	for (b = 0; b < 10; b++)
 	{
-		putchar("%d", b);
+		putchar((b % 10) + '0');
+		if (b >= 0 && b < 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+		else
+			continue;
 	}
-	putchar(',');
+	putchar('\n');
 	return (0);
 }
