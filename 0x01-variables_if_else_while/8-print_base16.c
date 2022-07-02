@@ -13,12 +13,12 @@ int main(void)
 
 	for (b = 0; b < 10; b++)
 	{
-		putchar((var % 10) + '0')
+		putchar((b % 10) + '0');
 	}
 
 	for (B = 'a'; b <= 'f'; b++)
 	{
-		putchar(B)
+		putchar(B);
 	}
 	putchar('\n');
 	return (0);
