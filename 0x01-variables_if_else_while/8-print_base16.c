@@ -3,7 +3,7 @@
 /**
  * main - output all single digits of base 16 in lowercase
  *
- * Return: always 0 (sucess)
+ * Return: always 0 (success)
  */
 
 int main(void)
@@ -16,7 +16,7 @@ int main(void)
 		putchar((b % 10) + '0');
 	}
 
-	for (B = 'a'; B <= 'f'; b++)
+	for (B = 'a'; B <= 'f'; B++)
 	{
 		putchar(B);
 	}
