@@ -3,7 +3,7 @@
 /**
  * print_sign - print the sign of the input
  * @b: input
- * Return **
+ * Return: **
  */
 
 int print_sign(int b)
