@@ -23,7 +23,7 @@ void print_times_table(int a)
 		return;
 	for (b = 0; b <= a; b++)
 	{
-		for (c = 0; c <= n; c++)
+		for (c = 0; c <= a; c++)
 		{
 			fin = b * c;
 			if (c == 0)

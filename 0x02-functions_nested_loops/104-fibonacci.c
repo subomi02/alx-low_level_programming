@@ -18,7 +18,7 @@ int main(void)
 	{
 			c1 = (b1 + B2) / LARGEST;
 			c2 = (b1 + B2) % LARGEST;
-			c3 = a1 + B2 + c1;
+			c3 = a1 + A2 + c1;
 			a1 = A2, A2 = c3;
 			b1 = B2, B2 = c2;
 			printf("%lu%010lu", A2, B2);
