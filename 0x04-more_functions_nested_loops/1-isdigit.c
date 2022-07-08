@@ -3,7 +3,7 @@
 
 /**
 * _isdigit - causes an infinite loop
-*@a:the number that is tested
+*@num:the number that is tested
 * Return: 0
 */
 
