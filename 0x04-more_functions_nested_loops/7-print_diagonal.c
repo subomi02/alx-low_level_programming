@@ -2,13 +2,14 @@
 
 /**
 * print_diagonal - multiplies two numbers
+* @a:number of \ to be printed
 * Return: 0
 */
 
 void print_diagonal(int a)
 {
 	int b;
-	
+
 	if (a > 0)
 	{
 		for (b = 0; b < a; b++)
