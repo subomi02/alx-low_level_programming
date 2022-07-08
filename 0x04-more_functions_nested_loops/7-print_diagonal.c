@@ -1,25 +1,21 @@
 #include "main.h"
 
 /**
-* print_diagonal - multiplies two numbers
-* @a:number of \ to be printed
-* Return: 0
-*/
+ * print_diagonal - print diagonal (_) n number of times
+ * @a: integer variable
+ */
 
 void print_diagonal(int a)
 {
 	int b;
 
-	if (a > 0)
-	{
-		for (b = 0; b < a; b++)
-		{
-			_putchar('\\');
-		}
-		_putchar('\n');
-	}
-	else
+	if (a <= 0)
 	{
 		_putchar('\n');
+		return;
 	}
+
+	for (b = 0; b < a; b++)
+		_putchar('_');
+	_putchar('\n');
 }

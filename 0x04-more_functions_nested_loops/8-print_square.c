@@ -1,25 +1,26 @@
 #include "main.h"
 
 /**
-* print_line - print lines
-* @a:number of lines printed
-* Return: 0
+* print_square - print square
+* @a: integer variable
+*
 */
 
-void print_line(int a)
+void print_square(int a)
 {
-	int b;
-
-	if (a > 0)
-	{
-		for (b = 0; b < a; b++)
-		{
-			_putchar('#');
-		}
+	if (a < 1)
 		_putchar('\n');
-	}
 	else
 	{
-		_putchar('\n');
+		int b;
+
+		for (b = 1; b <= a; b++)
+		{
+			int c;
+
+			for (c = 1; c <= a; c++)
+				_putchar('#');
+			_putchar('\n');
+		}
 	}
 }
