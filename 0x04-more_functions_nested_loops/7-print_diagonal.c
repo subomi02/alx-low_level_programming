@@ -20,7 +20,7 @@ void print_diagonal(int a)
 		for (column = 1; column <= a; column++)
 		{
 			_putchar(diagonal);
-			_putchar('n');
+			_putchar('\n');
 
 			for (i = 1; i <= column; i++)
 			{
