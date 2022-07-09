@@ -7,15 +7,28 @@
 
 void print_diagonal(int a)
 {
-	int b;
+	int column, i;
+	char diagonal;
 
-	if (a <= 0)
+	diagonal = '\\';
+	if (n <= 0)
 	{
 		_putchar('\n');
-		return;
 	}
+	else
+	{
+		for (column = 1; column <= a; column++)
+		{
+			_putchar(diagonal);
+			_putchar('n');
 
-	for (b = 0; b < a; b++)
-		_putchar('_');
-	_putchar('\n');
+			for (i = 1; i <= column; i++)
+			{
+				if (column < a)
+				{
+					_putchar(' ');
+				}
+			}
+		}
+	}
 }
