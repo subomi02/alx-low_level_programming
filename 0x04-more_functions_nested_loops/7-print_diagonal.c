@@ -11,7 +11,7 @@ void print_diagonal(int a)
 	char diagonal;
 
 	diagonal = '\\';
-	if (n <= 0)
+	if (a <= 0)
 	{
 		_putchar('\n');
 	}
