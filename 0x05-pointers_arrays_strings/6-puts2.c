@@ -1,18 +1,22 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
+
 /**
-*puts2 - prints the even numbers out of a string
-*@str: string to be printed in evens
+*puts2 - prints out a string
+*@str: string to be printed
 * Return: Always 0.
 */
 
 void puts2(char *str)
 {
-	while (*str != '\0')
+	int num = 0;
+
+	while (str[num] != '\0')
 	{
-		_putchar(*str++);
-		str++;
+		if (num % 2 == 0)
+		{
+			_putchar(str[num]);
+		}
+		num += 1;
 	}
-	putchar('\n');
+	_putchar('\n');
 }
