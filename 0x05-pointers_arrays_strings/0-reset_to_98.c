@@ -3,7 +3,7 @@
 
 /**
 * reset_to_98 - reset a number to 98
-*
+*@a: variable to be reset
 * Return: Always 0.
 */
 
