@@ -3,7 +3,7 @@
 
 /**
 * puts_half - print the last half of a string
-* @s: pointer to the string variable
+* @str: pointer to the string variable
 */
 
 void puts_half(char *str)
