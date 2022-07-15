@@ -3,6 +3,7 @@
 /**
  * string_toupper - Function that reverses the content of an array of integers.
  * @str: s is the array
+ * Return: always 0
  */
 
 char *string_toupper(char *str)
