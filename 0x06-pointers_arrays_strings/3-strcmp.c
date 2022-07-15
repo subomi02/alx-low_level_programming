@@ -7,7 +7,7 @@
 *@sec:second variable
 * Return: the result of the combination
 */
-char *_strcmp(char *fir, char *sec)
+int *_strcmp(char *fir, char *sec)
 {
 	return (strcmp(fir, sec));
 }
