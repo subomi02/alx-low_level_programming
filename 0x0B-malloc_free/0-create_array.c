@@ -9,8 +9,6 @@
  *
  * Return: pointer to the array or null if it fails
  *
- * Created by: Jonah Jockthan
- * cc: 23rd July, 2022
  */
 
 char *create_array(unsigned int size, char arr)
