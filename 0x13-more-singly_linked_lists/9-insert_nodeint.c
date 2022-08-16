@@ -1,25 +1,3 @@
-Skip to content
-Sign up
-Jockthan
-/
-alx-low_level_programming
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-alx-low_level_programming/0x13-more_singly_linked_lists/9-insert_nodeint.c
-@Jockthan
-Jockthan advanced
-Latest commit 626dae3 1 hour ago
- History
- 1 contributor
-49 lines (41 sloc)  769 Bytes
-
 #include "lists.h"
 
 /**
@@ -69,17 +47,3 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 
 	return (new);
 }
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
