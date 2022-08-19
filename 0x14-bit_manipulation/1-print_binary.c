@@ -1,32 +1,13 @@
-#include <stdio.h>
-#include <string.h>
 #include "main.h"
-#include <math.h>
 
 /**
- * binary_to_uint - converts binary to uint
- * @b: pointer to the character array in binary to be converted
- *
- * Return: converted number if successful, 0 otherwise
+ * print_binary - function that prints the binary representation of a number
+ * @n: number to be printed in binary
  */
-
-unsigned int binary_to_uint(const char *b)
+void print_binary(unsigned long int n)
 {
-	int i, base = 1, len = 0;
-	unsigned int res = 0;
+	if (n > 1)
+		print_binary(n >> 1);
 
-	if (!b)
-		return (0);
-
-	len = strlen(b);
-
-	for (i = len - 1; i >= 0; i--)
-	{
-		if (b[i] < '0' || b[i] > '1')
-			return (0);
-		if (b[i] == '1')
-			res += base;
-		base *= 2;
-	}
-	return (res);
+	_putchar((n & 1) + '0');
 }
