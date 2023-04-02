@@ -13,7 +13,7 @@
 
 int **alloc_grid(int col, int row)
 {
-	int i, j,  **grid;
+	int i, a,  **grid;
 
 	grid = malloc(row * sizeof(*grid));
 
@@ -30,8 +30,8 @@ int **alloc_grid(int col, int row)
 			free(grid);
 			return (NULL);
 		}
-		for (j = 0; j < col; j++)
-			grid[i][j] = 0;
+		for (a = 0; a < col; a++)
+			grid[i][a] = 0;
 	}
 
 	return (grid);
