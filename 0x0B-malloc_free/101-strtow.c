@@ -14,12 +14,12 @@ char **strtow(char *str);
  */
 int word_len(char *str)
 {
-	int index = 0, len = 0;
+	int indexs = 0, len = 0;
 
-	while (*(str + index) && *(str + index) != ' ')
+	while (*(str + indexs) && *(str + indexs) != ' ')
 	{
 		len++;
-		index++;
+		indexs++;
 	}
 
 	return (len);
@@ -33,17 +33,17 @@ int word_len(char *str)
  */
 int count_words(char *str)
 {
-	int index = 0, words = 0, len = 0;
+	int indexs = 0, words = 0, len = 0;
 
-	for (index = 0; *(str + index); index++)
+	for (indexs = 0; *(str + indexs); indexs++)
 		len++;
 
-	for (index = 0; index < len; index++)
+	for (indexs = 0; indexs < len; indexs++)
 	{
-		if (*(str + index) != ' ')
+		if (*(str + indexs) != ' ')
 		{
 			words++;
-			index += word_len(str + index);
+			indexs += word_len(str + indexs);
 		}
 	}
 
