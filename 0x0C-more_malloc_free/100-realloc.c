@@ -4,8 +4,8 @@
 #include <string.h>
 
 /**
- * _realloc - reallocates blocks of memory
- * @ptr: pointer to the memory previously allocated
+ * _realloc - reallocates block of memory
+ * @ptr: pointer
  * @old_size: size of the previous memory
  * @new_size: new size in bytes
  *
