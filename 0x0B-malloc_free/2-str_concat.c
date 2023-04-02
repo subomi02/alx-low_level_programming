@@ -6,7 +6,7 @@
 int _strlen(const char *s);
 
 /**
- * str_concat - concatenate two string
+ * str_concat - concatenate two string together
  * @s1: pointer to first string
  * @s2: pointer to second string
  *
@@ -16,17 +16,17 @@ int _strlen(const char *s);
 
 char *str_concat(char *s1, char *s2)
 {
-	int i = 0, j = 0;
+	int ic = 0, j = 0;
 	char *output;
 
 	if (s1 == NULL)
 		s1 = "\0";
 	if (s2 == NULL)
 		s2 = "\0";
-	i = _strlen(s1);
+	ic = _strlen(s1);
 	j = _strlen(s2);
 
-	output = malloc((i + j) * sizeof(*s1) + 1);
+	output = malloc((ic + j) * sizeof(*s1) + 1);
 
 	if (output == 0)
 		return (NULL);
@@ -42,9 +42,9 @@ char *str_concat(char *s1, char *s2)
  */
 int _strlen(const char *s)
 {
-	int i = 0;
+	int ic = 0;
 
-	for (; s[i] != '\0'; i++)
+	for (; s[ic] != '\0'; ic++)
 		;
-	return (i);
+	return (ic);
 }
