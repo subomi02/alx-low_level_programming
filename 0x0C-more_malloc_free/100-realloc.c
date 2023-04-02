@@ -14,13 +14,13 @@
 
 void *_realloc(void *pr, unsigned int o_size, unsigned int n_size)
 {
-	int *t;
+	int *a;
 
 	if (n_size == o_size)
 		return (pr);
-	t = realloc(pr, n_size);
-	if (t == NULL)
+	a = realloc(pr, n_size);
+	if (a == NULL)
 		return (NULL);
 
-	return (t);
+	return (a);
 }
