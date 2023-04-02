@@ -3,11 +3,11 @@
 #include <stdlib.h>
 
 /**
- * init_dog - initialize a variable of type `struct dog`
+ * init_dog - initializes variable e `struct dog`
  * @d: struct dog
- * @name: string for name
- * @age: integer for age
- * @owner: string for owners name
+ * @name: string
+ * @age: integer
+ * @owner: string
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
