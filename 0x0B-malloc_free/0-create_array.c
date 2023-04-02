@@ -4,23 +4,23 @@
 
 /**
  * create_array - create an array of char
- * @size: size of the array
- * @arr: character
+ * @sizes: size of the array
+ * @arrd: character
  *
  * Return: pointer to the array or null if it fails
  *
  */
 
-char *create_array(unsigned int size, char arr)
+char *create_array(unsigned int sizes, char arrd)
 {
-	char *array_alloc = malloc(size * sizeof(char));
-	unsigned int i;
+	char *array_alloc = malloc(sizes * sizeof(char));
+	unsigned int id;
 
-	if (size == 0 || array_alloc == NULL)
+	if (sizes == 0 || array_alloc == NULL)
 		return (NULL);
 
-	for (i = 0; i < size; i++)
-		array_alloc[i] = arr;
+	for (i = 0; i < sizes; i++)
+		array_alloc[i] = arrd;
 
 	return (array_alloc);
 }
