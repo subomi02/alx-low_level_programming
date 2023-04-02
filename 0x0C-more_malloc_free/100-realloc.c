@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * _realloc - function to reallocate a block of memory
+ * _realloc - reallocates blocks of memory
  * @ptr: pointer to the memory previously allocated
  * @old_size: size of the previous memory
  * @new_size: new size in bytes
@@ -12,15 +12,15 @@
  * Return: pointer to the reallocated memory if successful, NULL, otherwise
  */
 
-void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
+void *_realloc(void *pr, unsigned int o_size, unsigned int n_size)
 {
-	int *tmp;
+	int *t;
 
-	if (new_size == old_size)
-		return (ptr);
-	tmp = realloc(ptr, new_size);
-	if (tmp == NULL)
+	if (n_size == o_size)
+		return (pr);
+	t = realloc(pr, n_size);
+	if (t == NULL)
 		return (NULL);
 
-	return (tmp);
+	return (t);
 }
