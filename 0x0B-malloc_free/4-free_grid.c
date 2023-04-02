@@ -11,9 +11,9 @@
 
 void free_grid(int **grid, int row)
 {
-	int i;
+	int a;
 
-	for (i = 0; i < row; i++)
-		free(grid[i]);
+	for (a = 0; a < row; a++)
+		free(grid[a]);
 	free(grid);
 }
