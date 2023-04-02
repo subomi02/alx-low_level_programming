@@ -4,17 +4,17 @@
 
 /**
  * is_digit - checks if a string contains a non-digit char
- * @s: string to be evaluated
+ * @ab: string to be evaluated
  *
  * Return: 0 if a non-digit is found, 1 otherwise
  */
-int is_digit(char *s)
+int is_digit(char *ab)
 {
 	int i = 0;
 
-	while (s[i])
+	while (ab[i])
 	{
-		if (s[i] < '0' || s[i] > '9')
+		if (ab[i] < '0' || ab[i] > '9')
 			return (0);
 		i++;
 	}
@@ -22,16 +22,16 @@ int is_digit(char *s)
 }
 
 /**
- * _strlen - returns the length of a string
- * @s: string to evaluate
+ * _strlen - print length of a string
+ * @ab: string to evaluate
  *
  * Return: the length of the string
  */
-int _strlen(char *s)
+int _strlen(char *ab)
 {
 	int i = 0;
 
-	while (s[i] != '\0')
+	while (ab[i] != '\0')
 	{
 		i++;
 	}
@@ -39,7 +39,7 @@ int _strlen(char *s)
 }
 
 /**
- * errors - handles errors for main
+ * errors - handles errors
  */
 void errors(void)
 {
@@ -48,22 +48,22 @@ void errors(void)
 }
 
 /**
- * main - multiplies two positive numbers
- * @argc: number of arguments
- * @argv: array of arguments
+ * main - multiply two positive numbers
+ * @argc: number of argument
+ * @argv: array of argument
  *
  * Return: always 0 (Success)
  */
 int main(int argc, char *argv[])
 {
-	char *s1, *s2;
+	char *ab1, *ab2;
 	int len1, len2, len, i, carry, digit1, digit2, *result, a = 0;
 
-	s1 = argv[1], s2 = argv[2];
-	if (argc != 3 || !is_digit(s1) || !is_digit(s2))
+	ab1 = argv[1], ab2 = argv[2];
+	if (argc != 3 || !is_digit(ab1) || !is_digit(ab2))
 		errors();
-	len1 = _strlen(s1);
-	len2 = _strlen(s2);
+	len1 = _strlen(ab1);
+	len2 = _strlen(ab2);
 	len = len1 + len2 + 1;
 	result = malloc(sizeof(int) * len);
 	if (!result)
@@ -72,11 +72,11 @@ int main(int argc, char *argv[])
 		result[i] = 0;
 	for (len1 = len1 - 1; len1 >= 0; len1--)
 	{
-		digit1 = s1[len1] - '0';
+		digit1 = ab1[len1] - '0';
 		carry = 0;
-		for (len2 = _strlen(s2) - 1; len2 >= 0; len2--)
+		for (len2 = _strlen(ab2) - 1; len2 >= 0; len2--)
 		{
-			digit2 = s2[len2] - '0';
+			digit2 = ab2[len2] - '0';
 			carry += result[len1 + len2 + 1] + (digit1 * digit2);
 			result[len1 + len2 + 1] = carry % 10;
 			carry /= 10;
