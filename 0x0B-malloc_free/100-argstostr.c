@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * _strlen - find length of a string
+ * _strlen - find length of a string an stuff
  * @s: string
  * Return: int
  */
@@ -11,14 +11,14 @@
 
 int _strlen(char *s)
 {
-int size = 0;
-for (; s[size] != '\0'; size++)
+int sizes = 0;
+for (; s[sizes] != '\0'; sizes++)
 ;
-return (size);
+return (sizes);
 }
 
 /**
- * *argstostr - description
+ * *argstostr - description of codea and argument
  * @ac: int
  * @av: arguments
  * Return: string
