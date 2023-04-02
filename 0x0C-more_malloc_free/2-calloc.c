@@ -12,15 +12,15 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *str;
+	int *a;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	str = calloc(nmemb, size);
+	a = calloc(nmemb, size);
 
-	if (str == NULL)
+	if (a == NULL)
 		return (NULL);
 
-	return (str);
+	return (a);
 }
